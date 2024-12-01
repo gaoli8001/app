@@ -5,9 +5,23 @@ Created on Sat Nov 30 16:23:17 2024
 @author: gaoli
 """
 import sys
-print(sys.path) 
-import streamlit as st
+print(sys.path)
+import sys
+import subprocess
+import pkg_resources
+
+# 检查并安装缺失的依赖
+required = {'joblib'}
+installed = {pkg.key for pkg in pkg_resources.working_set}
+missing = required - installed
+
+if missing:
+    print(f"Installing missing packages: {missing}")
+    subprocess.check_call([sys.executable, '-m', 'pip', 'install', *missing])
+
+# 导入 joblib
 import joblib
+import streamlit as st
 import numpy as np
 import pandas as pd
 import shap
