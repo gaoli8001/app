@@ -12,5 +12,5 @@ streamlit
 joblib
 altair
 ipython
-
+setuptools
 
