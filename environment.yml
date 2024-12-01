@@ -15,7 +15,7 @@ dependencies:
   - imbalanced-learn
   - shap
   - streamlit
-  - joblib=1.2.0
+  - joblib
   - altair
   - ipython
   - pip
