@@ -4,7 +4,8 @@ Created on Sat Nov 30 16:23:17 2024
 
 @author: gaoli
 """
-
+import sys
+print(sys.path) 
 import streamlit as st
 import joblib
 import numpy as np
