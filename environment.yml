@@ -23,4 +23,6 @@ dependencies:
       - --trusted-host pypi.org
       - --trusted-host files.pythonhosted.org
       - streamlit
+      - joblib
+      - some-pip-package
 
